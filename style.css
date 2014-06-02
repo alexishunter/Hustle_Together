@@ -1,0 +1,10 @@
+/*for some reason css isnt showing in Safari, why?*/
+#content { 
+height: 600px;
+font-family: Courier;
+}
+
+#header {
+font-family: Courier;
+}
+	
