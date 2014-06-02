@@ -8,3 +8,12 @@ font-family: Courier;
 font-family: Courier;
 }
 	
+#find {
+float: left;
+margin: 100px; /*setting all margins(top, right, bottom, and left) to 25px*/
+}
+
+#help {
+float: right;
+margin: 100px; 
+}
