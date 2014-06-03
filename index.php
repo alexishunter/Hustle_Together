@@ -10,25 +10,11 @@
 
 
 <body>
- <?php
-// Create connection
-$con=mysqli_connect("localhost","myhustle","myhustle","myhustle");
-
-// Check connection
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL:<br> " . mysqli_connect_error();
-}
-/*else {
-  echo "It worked!<br>"; 
-  }
-  
-  echo "I'm learning PHP!<br>"; //fucking the smallest syntax errors!!*/
-  
-  ?>
+ 
 <div id="content">
 
 	<div id="find">
-	<form action="insert.php" method="post">
+	<form action="search.php" method="post">
 	<h1>Find who you're looking for</h1>
 		<h3>Where are you hustlin'?</h3>
 		 <input type="text" name="location" value="ie. Dallas, Austin, San Fran...">
@@ -40,7 +26,7 @@ if (mysqli_connect_errno()) {
 	</div>
 	
 	<div id="help">
-	<!--<form action=# method #>-->
+	<form action="insert.php" method="post">
 	<h1> Help others find you</h1>
 		<h3>What's your name?</h3>
 		<input type="text" name="name" value="ie. Jimi Hendrix">
@@ -49,20 +35,20 @@ if (mysqli_connect_errno()) {
 		<h3>What's your hustle?</h3>
 		<input type="text" name="pursuit" value="ie. Styling, Modeling, Sewing...">
 		<h3>How can you be reached?</h3>
-		<input type="text" name="contact_info" value="ie. Email addy, Phone #, Twitter acct url">
+		<input type="text" name="ContactInfo" value="ie. Email addy, Phone #, Twitter acct url">
 		
-		<!--how to insert a file through the html form-->
+		<!--how to insert a file through the html form
 		
-		<form action="upload_file.php" method="post"
-		enctype="multipart/form-data"> <!-- the enctype attribute specifies which content-type to use -->
-		<h3>What do you look like?</h3>
-		<label for="file">Choose a kewl pic</label>
-		<input type="file" name="file" id="file"><br> <!--the type attribute specifies that the input should be processed as a file, instead of say a "submit" button-->
-		<input type="submit" name="submit" value="Upload your pic">
-		</form>
-		<br><br><br>
-
-	<input type="submit">
+			<form action="upload_file.php" method="post"
+			enctype="multipart/form-data"> //the enctype attribute specifies which content-type to use
+			<h3>What do you look like?</h3>
+			<label for="file">Choose a kewl pic:</label>
+			<input type="file" name="file" id="file"><br> //the type attribute specifies that the input should be processed as a file, instead of say a "submit" button
+			<input type="submit" name="submit" value="Upload your pic">
+			</form>-->
+	    <br><br><br>
+		<input type="submit">	
+	</form>
 	</div>
 
 <!--</div>-->
