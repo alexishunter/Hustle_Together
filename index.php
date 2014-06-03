@@ -40,7 +40,7 @@ if (mysqli_connect_errno()) {
 	</div>
 	
 	<div id="help">
-	<form action=# method #>
+	<!--<form action=# method #>-->
 	<h1> Help others find you</h1>
 		<h3>What's your name?</h3>
 		<input type="text" name="name" value="ie. Jimi Hendrix">
@@ -50,14 +50,22 @@ if (mysqli_connect_errno()) {
 		<input type="text" name="pursuit" value="ie. Styling, Modeling, Sewing...">
 		<h3>How can you be reached?</h3>
 		<input type="text" name="contact_info" value="ie. Email addy, Phone #, Twitter acct url">
+		
+		<!--how to insert a file through the html form-->
+		
+		<form action="upload_file.php" method="post"
+		enctype="multipart/form-data"> <!-- the enctype attribute specifies which content-type to use -->
+		<h3>What do you look like?</h3>
+		<label for="file">Choose a kewl pic</label>
+		<input type="file" name="file" id="file"><br> <!--the type attribute specifies that the input should be processed as a file, instead of say a "submit" button-->
+		<input type="submit" name="submit" value="Upload your pic">
+		</form>
 		<br><br><br>
-		<input type="submit">
-		<!--<h1>What do you look like?</h1>
-		insert picture-->
-	</form>
+
+	<input type="submit">
 	</div>
 
-</div>
+<!--</div>-->
 		
 
 <!--<div id="footer"> Made by <a href="https://twitter.com/ayeee_lexis/" target="_blank">Alexis Hunter</a> in her leopard sheeted bed. </div>-->
